@@ -1,0 +1,47 @@
+.hero-page{
+  margin-top: 24px;
+  text-align: center;
+}
+
+.hero-page i{
+  color: white;
+  font-size: 48px;
+}
+
+.hero-page p {
+  color: white;
+  font-size: 24px;
+}
+
+.hero-page a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+}
+
+.hero-page a:hover{
+  text-decoration: underline;
+}
+
+.hero-page .req-movies{
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.result-page{
+  margin-top: 24px;
+}
+
+.result-page h1{
+  color: white;
+}
+
+.error-tab{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.error-tab i{
+  font-size: 58px;
+  color: white;
+}

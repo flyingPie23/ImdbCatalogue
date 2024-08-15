@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ImdbCatalogue</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style/application.css">
+    <script src="javascript/application.js" type="module"></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "mustachejs": "https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.2.0/mustache.min.js"
+        }
+      }
+    </script>
+
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="cursor: pointer"> <img src="https://cdn.freebiesupply.com/images/large/2x/imdb-logo-transparent.png" alt="imdblogo"> CATALOGUE</a>
+        <form class="d-flex search-form" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search for a movie" aria-label="Search" >
+          <button class="btn btn-outline-info submit" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container hero-page">
+      <i class="fa-solid fa-ticket"></i>
+      <p>
+        need help choosing for tonight's movie night ? using the <a href="https://www.omdbapi.com/" target="_blank">OMDB api</a>,
+        with a quick search you'll quickly be shown a catalogue of suggestions.
+        and all you need to do is pick one, fire up some popcorn then pick on and enjoy !
+      </p>
+
+      <div class="row gx-5 req-movies">
+        <div class="col">
+          <div class="movie-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://cdn.marvel.com/content/1x/deadpoolandwolverine_lob_crd_03.jpg);">
+            <h1> DeadPool & Wolverine</h1>
+          </div>
+         </div>
+
+         <div class="col">
+          <div class="movie-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://lumiere-a.akamaihd.net/v1/images/kotpota_noa_1sht_uk_459c9ca7.jpeg?region=0,0,743,1100;);">
+            <h1> Kingdome of the Planet of the Apes</h1>
+          </div>
+         </div>
+
+         <div class="col">
+          <div class="movie-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://thecrimsonwhite.com/wp-content/uploads/2024/02/images-800x1200.jpeg);">
+            <h1> Orion and the Dark</h1>
+          </div>
+         </div>
+      </div>
+
+
+    </div>
+
+    <div class="container result-page d-none">
+      <h1 class="title"></h1>
+      <div class="error-tab d-none">
+        <h1>Sorry, Movie not found</h1>
+        <i class="fa-solid fa-face-frown-open"></i>
+
+      </div>
+
+
+      <div class="row row-cols-5 list">
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+  </body>
+</html>

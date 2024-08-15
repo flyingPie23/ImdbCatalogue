@@ -1,0 +1,20 @@
+.navbar {
+  background-color: rgb(25, 39, 52);
+  box-shadow: rgb(0, 0, 0) 2px 0px 2px;
+}
+
+.navbar .navbar-brand{
+  color: white;
+  font-size: 32 px;
+  font-weight: bold;
+
+}
+
+.navbar img{
+ height: 25px;
+ width: 50px;
+}
+
+.search-form .form-control{
+  margin-right: 28px;
+}

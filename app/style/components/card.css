@@ -1,0 +1,31 @@
+.movie-card{
+  height: 450px;
+  padding: 150px 0;
+  margin: 15px;
+  border-radius: 25px;
+  border: solid 1px black;
+
+  color: white;
+
+  background-size: cover;
+  background-position: center;
+
+  text-align: center;
+
+
+}
+
+.movie-card h1{
+  text-decoration: none;
+  text-shadow: rgb(0, 0, 0) 2px 0px 2px;
+
+}
+
+.movie-card-link{
+  text-decoration: none;
+}
+
+
+.movie-card:hover{
+  box-shadow: rgb(0, 0, 0) 2px 0px 2px;
+}
